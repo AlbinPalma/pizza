@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css"> 
+<script src="script.js"></script> 
+<title>Menú de Pizzas</title>
+</head>
+<body>
+  <header>
+    <h1>Menú de Pizzas</h1>
+  </header>
+  <div class="container">
+    <div class="pizza-item">
+        <img src="imagen/carne.jpg" alt="Pizza Carne" onclick="agregarAlCarrito('Pizza Carne', 60.00)">
+      <div class="pizza-details">
+        <h2 class="pizza-name">Pizza Carne</h2>
+        <p>carne, queso mozzarella, salsa de tomate</p>
+        <span class="pizza-price">Q60.00</span>
+      </div>
+    </div>
+    <div class="pizza-item">
+        <img src="imagen/hawaiana.jpg" alt="Pizza Hawaiana" onclick="agregarAlCarrito('Pizza Hawaiana', 50.00)">
+      <div class="pizza-details">
+        <h2 class="pizza-name">Pizza Hawaiana</h2>
+        <p>Jamón, piña, queso mozzarella, salsa de tomate</p>
+        <span class="pizza-price">Q50.00</span>
+      </div>
+    </div>
+    <div class="pizza-item">
+        <img src="imagen/vegetariana.jpg" alt="Pizza Vegetariana" onclick="agregarAlCarrito('Pizza vegetarianna', 55.00)">
+      <div class="pizza-details">
+        <h2 class="pizza-name">Pizza Vegetariana</h2>
+        <p>Vegetales frescos, queso mozzarella, salsa de tomate</p>
+        <span class="pizza-price">Q55.00</span>
+      </div>
+    </div>
+    <div class="pizza-item">
+        <img src="imagen/pepperoni.jpg" alt="Pizza Pepperoni" onclick="agregarAlCarrito('Pizza Pepperoni', 45.00)">
+        <div class="pizza-details">
+          <h2 class="pizza-name">Pizza Pepperoni</h2>
+          <p>Pepperoni, queso mozzarella, salsa de tomate</p>
+          <span class="pizza-price">Q45.00</span>
+        </div>
+      </div>
+      <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-lista"></ul>
+        <p>Total: <span id="carrito-total">$0.00</span></p>
+        <button id="finalizar-compra">Finalizar Compra</button>
+      </div>
+       
+  </div>
+</body>
+</html>
